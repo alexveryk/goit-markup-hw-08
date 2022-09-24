@@ -1,0 +1,42 @@
+.features__list {
+  display: flex;
+  gap: 30px;
+}
+
+.features__sub-title {
+  font-weight: 700;
+  font-size: inherit;
+  line-height: 1.14;
+
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  padding-top: 30px;
+}
+
+.features__text {
+  line-height: 1.71;
+  color: var(--second-color-page);
+}
+
+.features__item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.features.section {
+  padding-bottom: 0;
+}
+
+.features__icon {
+  display: block;
+  width: 70px;
+  height: 70px;
+}
+
+.features__container {
+  display: flex;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: var(--background-color-section-team);
+}
