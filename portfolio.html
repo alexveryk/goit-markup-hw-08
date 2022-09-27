@@ -19,7 +19,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header__container">
         <nav class="menu">
           <a class="logo link" href="./index.html"
             ><span class="logo_accent">Web</span>Studio</a
@@ -30,7 +30,7 @@
             </li>
             <li class="menu__item list">
               <a
-                class="menu__link link menu__link_current"
+                class="menu__link menu__link_current link"
                 href="./portfolio.html"
                 >Портфоліо</a
               >
@@ -40,6 +40,11 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="mobile-btn-menu" data-menu-open>
+          <svg class="mobile-btn-menu__icon">
+            <use href="./images/icons.svg#burger-icon"></use>
+          </svg>
+        </button>
         <ul class="contacts list">
           <li class="contacts__item list">
             <a class="contacts__link link" href="mailto:info@devstudio.com">
@@ -55,7 +60,7 @@
             >
           </li>
           <li class="contacts__item list">
-            <a class="contacts__link link list" href="tel:+380961111111">
+            <a class="contacts__link link" href="tel:+380961111111">
               <svg
                 aria-label="Іконка телефона"
                 class="contacts__icon"
@@ -67,6 +72,36 @@
             >
           </li>
         </ul>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__btn-close" data-menu-close>
+            <svg class="mobile-menu__icon">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul>
+            <li>
+              <a href="">Студія</a>
+            </li>
+            <li>
+              <a href="">Портфоліо</a>
+            </li>
+            <li>
+              <a href="">Контакти</a>
+            </li>
+          </ul>
+          <ul>
+            <li><a href=""> </a></li>
+            <li><a href=""> </a></li>
+          </ul>
+          <ul>
+            <li><a href=""> </a></li>
+            <li><a href=""> </a></li>
+            <li><a href=""> </a></li>
+            <li><a href=""> </a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <main class="">
