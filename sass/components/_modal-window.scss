@@ -1,9 +1,9 @@
 .modal {
   position: absolute;
-  top: 50%;
+  top: 5%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 528px;
+  transform: translate(-50%);
+  width: 90%;
   padding: 40px;
   background-color: var(--backround-color-light);
 }
@@ -24,5 +24,19 @@
   &:hover,
   &:focus {
     fill: var(--accent-color);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
   }
 }
