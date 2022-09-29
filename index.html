@@ -202,31 +202,89 @@
           <ul class="works__list list">
             <li class="works__item">
               <div class="works__thumb">
-                <img
-                  class="works__img"
-                  src="./images/box-1.jpg"
-                  alt="Написання коду"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/box-1-desktop.webp    1x,
+                      ./images/desktop/box-1-desktop@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/desktop/box-1-desktop.jpg    1x,
+                      ./images/desktop/box-1-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <img
+                    class="works__img"
+                    src="./images/desktop/box-1-desktop.jpg"
+                    alt="Написання коду"
+                  />
+                </picture>
                 <h3 class="works__label">Десктоні додатки</h3>
               </div>
             </li>
             <li class="works__item">
               <div class="works__thumb">
-                <img
-                  class="works__img"
-                  src="./images/box-2.jpg"
-                  alt="Перевірка адаптивності"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/box-2-desktop.webp    1x,
+                      ./images/desktop/box-2-desktop@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/desktop/box-2-desktop.jpg    1x,
+                      ./images/desktop/box-2-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <img
+                    class="works__img"
+                    src="./images/desktop/box-2-desktop.jpg"
+                    alt="Перевірка
+                  адаптивності"
+                  />
+                </picture>
+
                 <h3 class="works__label">Мобільні додатки</h3>
               </div>
             </li>
             <li class="works__item">
               <div class="works__thumb">
-                <img
-                  class="works__img"
-                  src="./images/box-3.jpg"
-                  alt="Підбір кольорової гами"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/box-3-desktop.webp    1x,
+                      ./images/desktop/box-3-desktop@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/desktop/box-3-desktop.jpg    1x,
+                      ./images/desktop/box-3-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <img
+                    class="works__img"
+                    src="./images/desktop/box-3-desktop.jpg "
+                    alt="Підбір кольорової гами"
+                  />
+                </picture>
                 <h3 class="works__label">Дизайнерські рішення</h3>
               </div>
             </li>
@@ -238,11 +296,68 @@
           <h2 class="section-title section-title_margin_end">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/mobile/team-photo-1.jpg"
-                alt="Фото Ігоря Дем'яненка"
-              />
+              <picture>
+                <!-- 1200 -->
+                <source
+                  srcset="
+                    ./images/desktop/team-photo-1-desktop.webp    1x,
+                    ./images/desktop/team-photo-1-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/desktop/team-photo-1-desktop.jpg    1x,
+                    ./images/desktop/team-photo-1-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <!-- /1200 -->
+                <!-- 768 -->
+                <source
+                  srcset="
+                    ./images/tablet/team-photo-1-tablet.webp    1x,
+                    ./images/tablet/team-photo-1-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/tablet/team-photo-1-tablet.jpg    1x,
+                    ./images/tablet/team-photo-1-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <!-- /768 -->
+                <!-- 450 -->
+                <source
+                  srcset="
+                    ./images/mobile/team-photo-1-mobile.webp    1x,
+                    ./images/mobile/team-photo-1-mobile@2x.webp 2x
+                  "
+                  media="(min-width: 450px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/mobile/team-photo-1-mobile.jpg    1x,
+                    ./images/mobile/team-photo-1-mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 450px)"
+                />
+                <!-- /450 -->
+
+                <img
+                  class="team__img"
+                  src="./images/mobile/team-photo-1-mobile.jpg"
+                  alt="Фото Ігоря Дем'яненка"
+                />
+              </picture>
               <h3 class="team__title">Ігор Дем'яненко</h3>
               <p class="team__text" lang="en">Product Designer</p>
               <ul class="team__social-list list">
@@ -293,11 +408,60 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/team-photo-3.jpg"
-                alt="Фото Ольги Рєпіної"
-              />
+              <picture>
+                <!-- 1200 -->
+                <source
+                  srcset="
+                    ./images/desktop/team-photo-2-desktop.webp    1x,
+                    ./images/desktop/team-photo-2-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/team-photo-2-desktop.jpg    1x,
+                    ./images/desktop/team-photo-2-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <!-- /1200 -->
+                <!-- 768 -->
+                <source
+                  srcset="
+                    ./images/tablet/team-photo-2-tablet.webp    1x,
+                    ./images/tablet/team-photo-2-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team-photo-2-tablet.jpg    1x,
+                    ./images/tablet/team-photo-2-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <!-- /768 -->
+                <!-- 450 -->
+                <source
+                  srcset="
+                    ./images/mobile/team-photo-2-mobile.webp    1x,
+                    ./images/mobile/team-photo-2-mobile@2x.webp 2x
+                  "
+                  media="(min-width: 450px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/team-photo-2-mobile.jpg    1x,
+                    ./images/mobile/team-photo-2-mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 450px)"
+                />
+                <!-- /450 -->
+                <img class="team__img" src="#" alt="Фото Ольги Рєпіної" />
+              </picture>
               <h3 class="team__title">Ольга Рєпіна</h3>
               <p class="team__text" lang="en">Frontend Developer</p>
               <ul class="team__social-list list">
@@ -348,11 +512,61 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/team-photo-2.jpg"
-                alt="Фото Миколи Тарасова"
-              />
+              <picture>
+                <!-- 1200 -->
+                <source
+                  srcset="
+                    ./images/desktop/team-photo-3-desktop.webp    1x,
+                    ./images/desktop/team-photo-3-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/desktop/team-photo-3-desktop.jpg    1x,
+                    ./images/desktop/team-photo-3-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <!-- /1200 -->
+                <!-- 768 -->
+                <source
+                  srcset="
+                    ./images/tablet/team-photo-3-tablet.webp    1x,
+                    ./images/tablet/team-photo-3-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/tablet/team-photo-3-tablet.jpg    1x,
+                    ./images/tablet/team-photo-3-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <!-- /768 -->
+
+                <!-- 450 -->
+                <source
+                  srcset="
+                    ./images/mobile/team-photo-3-mobile.webp    1x,
+                    ./images/mobile/team-photo-3-mobile@2x.webp 2x
+                  "
+                  media="(min-width: 450px)"
+                  type="image/webp"
+                />
+                <!-- /450 -->
+                <img
+                  class="team__img"
+                  src="./images/mobile/team-photo-3-mobile.jpg"
+                  alt="Фото Миколи Тарасова"
+                />
+              </picture>
+
               <h3 class="team__title">Микола Тарасов</h3>
               <p class="team__text" lang="en">Marketing</p>
               <ul class="team__social-list list">
@@ -403,11 +617,61 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/team-photo-4.jpg"
-                alt="Фото Михайла Єрмакова"
-              />
+              <picture>
+                <!-- 1200 -->
+                <source
+                  srcset="
+                    ./images/desktop/team-photo-4-desktop.webp    1x,
+                    ./images/desktop/team-photo-4-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/desktop/team-photo-4-desktop.jpg    1x,
+                    ./images/desktop/team-photo-4-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <!-- /1200 -->
+                <!-- 768 -->
+                <source
+                  srcset="
+                    ./images/tablet/team-photo-4-tablet.webp    1x,
+                    ./images/tablet/team-photo-4-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/tablet/team-photo-4-tablet.jpg    1x,
+                    ./images/tablet/team-photo-4-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <!-- /768 -->
+
+                <!-- 450 -->
+                <source
+                  srcset="
+                    ./images/mobile/team-photo-4-mobile.webp    1x,
+                    ./images/mobile/team-photo-4-mobile@2x.webp 2x
+                  "
+                  media="(min-width: 450px)"
+                  type="image/webp"
+                />
+                <!-- /450 -->
+                <img
+                  class="team__img"
+                  src="./images/mobile/team-photo-4-mobile.jpg"
+                  alt="Фото Михайла Єрмакова"
+                />
+              </picture>
+
               <h3 class="team__title">Михайло Єрмаков</h3>
               <p class="team__text" lang="en">UI Designer</p>
               <ul class="team__social-list list">
@@ -577,28 +841,28 @@
           <ul class="join list">
             <li class="join__item">
               <a class="join__link link" href="">
-                <svg leng="en" aria-label="icon instagram" class="join__icon">
+                <svg lang="en" aria-label="icon instagram" class="join__icon">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="join__item">
               <a class="join__link link" href=""
-                ><svg leng="en" aria-label="icon twitter" class="join__icon">
+                ><svg lang="en" aria-label="icon twitter" class="join__icon">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="join__item">
               <a class="join__link link" href="">
-                <svg leng="en" aria-label="icon facebook" class="join__icon">
+                <svg lang="en" aria-label="icon facebook" class="join__icon">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="join__item">
               <a class="join__link link" href=""
-                ><svg leng="en" aria-label="icon linkedin" class="join__icon">
+                ><svg lang="en" aria-label="icon linkedin" class="join__icon">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
