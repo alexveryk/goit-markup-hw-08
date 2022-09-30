@@ -15,9 +15,9 @@
   flex-direction: column;
 }
 
-.footer-column:not(:last-child) {
-  margin-bottom: 60px;
-}
+// .footer-column:not(:last-child) {
+//   margin-bottom: 60px;
+// }
 
 .address__link {
   font-family: inherit;
@@ -136,6 +136,11 @@
   transform: translateY(-50%);
   right: 28px;
   fill: currentColor;
+}
+@media screen and (max-width: 1199px) {
+  .footer-column:not(:last-child) {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) {
